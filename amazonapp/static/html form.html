@@ -1,0 +1,823 @@
+                               <!-- HTML Forms -->
+
+    <!-- >>>It is the most common way for a user to communicate the information from a web browser to server-->
+    <!-- >>>form tag is used to create a HTML form this tag has several attributes and among them are:-->
+
+    <!--  + Method : This attributes specifies how the enteted data inform is sent to destination -->
+    <!--     > There are two methods for sending information :-
+                  * post : In post method data is invisible while sending also it provides security
+                  * get  : In get method data is visible while sending also the data is not secure        -->
+
+     <!-- + Action : This attribute specifies the URL of the application which is to be called when 
+                     the user clicksthe submit button  -->
+                     
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form method="post" action="">
+        <label>Name</label>
+        <input type="text">
+
+        <br>
+        <br>
+
+        <label>email</label>
+        <input type="email">
+
+        <br>
+        <br>
+
+        <label>Phone</label>
+        <input type="number">
+
+        <br>
+        <br>
+
+        <label>Password</label>
+        <input type="password">
+
+        <br>
+        <br>
+
+        <label>Gender</label>
+        <input type="radio">Female
+        <input type="radio">Male
+        <input type="radio">Other
+
+        <br>
+        <br>
+
+        <label>Language</label>
+        <input type="checkbox">Malayalam
+        <input type="checkbox">English
+        <input type="checkbox">Tamil
+        <input type="checkbox">Marathi
+
+        <br>
+        <br>
+
+        <label>State</label>
+        <select>
+            <option>Select States</option>
+            <option>Kerala</option>
+            <option>Tamil Nadu</option>
+            <option>Karnataka</option>
+            <option>Andhra Pradesh</option>
+            <option>Gujarath</option>
+            <option>Maharashtra</option>
+           
+        </select>
+
+        <br>
+        <br>
+
+        <label>Address</label>
+        <textarea></textarea>
+
+        <br>
+        <br>
+
+        <label>File upload</label>
+        <input type="file">
+
+        <br>
+        <br>
+
+        <label>DOB</label>
+        <input type="date">
+
+        <br>
+        <br>
+
+        <label>Time</label>
+        <input type="time">
+
+        <br>
+        <br>
+
+        <label>Colour</label>
+        <input type="color">
+
+        <br>
+        <br>
+
+        <input type="submit">
+        <input type="reset">
+
+    </form>
+
+    <br>
+    <br>
+    <br>
+
+                        <!-- Attributes : -->
+        <!-- Name Attribute : The Name Attribute which is used as a reference for the element after
+                               a form is submitted-->
+
+<form method="post" action="">
+    <label>Name</label>
+    <input type="text" name="firstname">
+                        
+    <br>
+    <br>
+                        
+    <label>email</label>
+    <input type="email" name="email">
+                        
+    <br>
+    <br>
+                        
+    <label>Phone</label>
+    <input type="number" name="phone">
+                        
+    <br>
+    <br>
+                        
+    <label>Password</label>
+    <input type="password" name="password">
+                        
+    <br>
+    <br> 
+                                
+    <label>Gender</label>
+    <input type="radio" name="gender">Female
+    <input type="radio" name="gender">Male
+    <input type="radio" name="gender">Other
+
+    <br>
+    <br>
+    <label>Language</label>
+    <input type="checkbox" name="malayalam">Malayalam
+    <input type="checkbox" name="english">English
+    <input type="checkbox" name="tamil">Tamil
+    <input type="checkbox" name="marathi">Marathi
+
+    <br>
+    <br>
+    <label>Address</label>
+    <textarea name="address"></textarea>
+    <br>
+    <br>
+
+    <label>File upload</label>
+    <input type="file" name="file">
+    <br>
+    <br>
+                       
+    <label>DOB</label>
+    <input type="date" name="dob">
+                       
+    <br>
+    <br>
+                       
+    <label>Time</label>
+    <input type="time" name="time">
+                       
+    <br>
+    <br>
+                       
+    <label>Colour</label>
+    <input type="color" name="color">
+                       
+    <br>
+    <br>
+
+    <input type="submit">
+    <input type="reset">
+
+</form>
+        <br>
+        <br>
+
+            <!-- Placehoder : It acts as an hint for an input field -->
+
+        <form method="post" action="">
+            <label>Name</label>
+            <input type="text" placeholder="abcdefg">
+    
+            <br>
+            <br>
+    
+            <label>email</label>
+            <input type="email" placeholder="abc@gmail.com">
+    
+            <br>
+            <br>
+    
+            <label>Phone</label>
+            <input type="number" placeholder="0000000000">
+    
+            <br>
+            <br>
+    
+            <label>Password</label>
+            <input type="password" placeholder="poli19">
+    
+            <br>
+            <br>
+    
+            <label>Gender</label>
+            <input type="radio">Female
+            <input type="radio">Male
+            <input type="radio">Other
+    
+            <br>
+            <br>
+    
+            <label>Language</label>
+            <input type="checkbox">Malayalam
+            <input type="checkbox">English
+            <input type="checkbox">Tamil
+            <input type="checkbox">Marathi
+    
+            <br>
+            <br>
+    
+            <label>State</label>
+            <select>
+                <option>Select States</option>
+                <option>Kerala</option>
+                <option>Tamil Nadu</option>
+                <option>Karnataka</option>
+                <option>Andhra Pradesh</option>
+                <option>Gujarath</option>
+                <option>Maharashtra</option>
+               
+            </select>
+    
+            <br>
+            <br>
+    
+            <label>Address</label>
+            <textarea></textarea>
+    
+            <br>
+            <br>
+    
+            <label>File upload</label>
+            <input type="file">
+    
+            <br>
+            <br>
+    
+            <label>DOB</label>
+            <input type="date">
+    
+            <br>
+            <br>
+    
+            <label>Time</label>
+            <input type="time">
+    
+            <br>
+            <br>
+    
+            <label>Colour</label>
+            <input type="color">
+    
+            <br>
+            <br>
+    
+            <input type="submit">
+            <input type="reset">
+    
+        </form>
+        <br>
+        <br>
+ 
+
+        <!-- Value Attribute : The value attributes specifies the value of the input field 
+                               It is used to set a default values
+                              The Value Attributes is used differently for different input types
+                              for button it defines text on that buttons and for text,passsword,field etc..
+                              it defines the default values-->
+
+
+   <form method="post" action="">
+            <label>Name</label>
+            <input type="text" placeholder="abcdefg" value="manu">
+    
+            <br>
+            <br>
+    
+            <label>email</label>
+            <input type="email" placeholder="abc@gmail.com" value="keefrthana@2002">
+    
+            <br>
+            <br>
+    
+            <label>Phone</label>
+            <input type="number" placeholder="0000000000">
+    
+            <br>
+            <br>
+    
+            <label>Password</label>
+            <input type="password" placeholder="poli19">
+    
+            <br>
+            <br>
+    
+            <label>Gender</label>
+            <input type="radio">Female
+            <input type="radio">Male
+            <input type="radio">Other
+    
+            <br>
+            <br>
+    
+            <label>Language</label>
+            <input type="checkbox">Malayalam
+            <input type="checkbox">English
+            <input type="checkbox">Tamil
+            <input type="checkbox">Marathi
+    
+            <br>
+            <br>
+    
+            <label>State</label>
+            <select>
+                <option>Select States</option>
+                <option>Kerala</option>
+                <option>Tamil Nadu</option>
+                <option>Karnataka</option>
+                <option>Andhra Pradesh</option>
+                <option>Gujarath</option>
+                <option>Maharashtra</option>
+               
+            </select>
+    
+            <br>
+            <br>
+    
+            <label>Address</label>
+            <textarea></textarea>
+    
+            <br>
+            <br>
+    
+            <label>File upload</label>
+            <input type="file">
+    
+            <br>
+            <br>
+    
+            <label>DOB</label>
+            <input type="date">
+    
+            <br>
+            <br>
+    
+            <label>Time</label>
+            <input type="time">
+    
+            <br>
+            <br>
+    
+            <label>Colour</label>
+            <input type="color">
+    
+            <br>
+            <br>
+    
+            <input type="submit">
+            <input type="reset">
+    
+        </form>
+ <br>
+ <br>
+
+        <!-- Pattern Attribute : It is used to apply regular expression patterns -->
+
+        <form method="post" action="">
+            <label>Name</label>
+            <input type="text" placeholder="abcdefg" value="manu" pattern="[A-Za-z]">
+    
+            <br>
+            <br>
+    
+            <label>email</label>
+            <input type="email" placeholder="abc@gmail.com">
+    
+            <br>
+            <br>
+    
+            <label>Phone</label>
+            <input type="number" placeholder="0000000000">
+    
+            <br>
+            <br>
+    
+            <label>Password</label>
+            <input type="password" placeholder="poli19">
+    
+            <br>
+            <br>
+    
+            <label>Gender</label>
+            <input type="radio">Female
+            <input type="radio">Male
+            <input type="radio">Other
+    
+            <br>
+            <br>
+    
+            <label>Language</label>
+            <input type="checkbox">Malayalam
+            <input type="checkbox">English
+            <input type="checkbox">Tamil
+            <input type="checkbox">Marathi
+    
+            <br>
+            <br>
+    
+            <label>State</label>
+            <select>
+                <option>Select States</option>
+                <option>Kerala</option>
+                <option>Tamil Nadu</option>
+                <option>Karnataka</option>
+                <option>Andhra Pradesh</option>
+                <option>Gujarath</option>
+                <option>Maharashtra</option>
+               
+            </select>
+    
+            <br>
+            <br>
+    
+            <label>Address</label>
+            <textarea></textarea>
+    
+            <br>
+            <br>
+    
+            <label>File upload</label>
+            <input type="file">
+    
+            <br>
+            <br>
+    
+            <label>DOB</label>
+            <input type="date">
+    
+            <br>
+            <br>
+    
+            <label>Time</label>
+            <input type="time">
+    
+            <br>
+            <br>
+    
+            <label>Colour</label>
+            <input type="color">
+    
+            <br>
+            <br>
+    
+            <input type="submit">
+            <input type="reset">
+    
+        </form>
+        <br>
+        <br>
+
+        <!-- Read Only Attribute : It cannot be changed that is the data is fixed-->
+
+        <form method="post" action="">
+            <label>Name</label>
+            <input type="text" placeholder="abcdefg" value="manu" pattern="[A-Za-z]" readonly>
+    
+            <br>
+            <br>
+    
+            <label>email</label>
+            <input type="email" placeholder="abc@gmail.com">
+    
+            <br>
+            <br>
+    
+            <label>Phone</label>
+            <input type="number" placeholder="0000000000">
+    
+            <br>
+            <br>
+    
+            <label>Password</label>
+            <input type="password" placeholder="poli19">
+    
+            <br>
+            <br>
+    
+            <label>Gender</label>
+            <input type="radio">Female
+            <input type="radio">Male
+            <input type="radio">Other
+    
+            <br>
+            <br>
+    
+            <label>Language</label>
+            <input type="checkbox">Malayalam
+            <input type="checkbox">English
+            <input type="checkbox">Tamil
+            <input type="checkbox">Marathi
+    
+            <br>
+            <br>
+    
+            <label>State</label>
+            <select>
+                <option>Select States</option>
+                <option>Kerala</option>
+                <option>Tamil Nadu</option>
+                <option>Karnataka</option>
+                <option>Andhra Pradesh</option>
+                <option>Gujarath</option>
+                <option>Maharashtra</option>
+               
+            </select>
+    
+            <br>
+            <br>
+    
+            <label>Address</label>
+            <textarea></textarea>
+    
+            <br>
+            <br>
+    
+            <label>File upload</label>
+            <input type="file">
+    
+            <br>
+            <br>
+    
+            <label>DOB</label>
+            <input type="date">
+    
+            <br>
+            <br>
+    
+            <label>Time</label>
+            <input type="time">
+    
+            <br>
+            <br>
+    
+            <label>Colour</label>
+            <input type="color">
+    
+            <br>
+            <br>
+    
+            <input type="submit">
+            <input type="reset">
+    
+        </form>
+
+
+        <!-- Required Attributes : The field is a reqired thing that is it is mandatory -->
+        
+
+        <form method="post" action="">
+            <label>Name</label>
+            <input type="text" placeholder="abcdefg" value="manu" pattern="[A-Za-z]" required>
+    
+            <br>
+            <br>
+    
+            <label>email</label>
+            <input type="email" placeholder="abc@gmail.com">
+    
+            <br>
+            <br>
+    
+            <label>Phone</label>
+            <input type="number" placeholder="0000000000">
+    
+            <br>
+            <br>
+    
+            <label>Password</label>
+            <input type="password" placeholder="poli19">
+    
+            <br>
+            <br>
+    
+            <label>Gender</label>
+            <input type="radio">Female
+            <input type="radio">Male
+            <input type="radio">Other
+    
+            <br>
+            <br>
+    
+            <label>Language</label>
+            <input type="checkbox">Malayalam
+            <input type="checkbox">English
+            <input type="checkbox">Tamil
+            <input type="checkbox">Marathi
+    
+            <br>
+            <br>
+    
+            <label>State</label>
+            <select>
+                <option>Select States</option>
+                <option>Kerala</option>
+                <option>Tamil Nadu</option>
+                <option>Karnataka</option>
+                <option>Andhra Pradesh</option>
+                <option>Gujarath</option>
+                <option>Maharashtra</option>
+               
+            </select>
+    
+            <br>
+            <br>
+    
+            <label>Address</label>
+            <textarea></textarea>
+    
+            <br>
+            <br>
+    
+            <label>File upload</label>
+            <input type="file">
+    
+            <br>
+            <br>
+    
+            <label>DOB</label>
+            <input type="date">
+    
+            <br>
+            <br>
+    
+            <label>Time</label>
+            <input type="time">
+    
+            <br>
+            <br>
+    
+            <label>Colour</label>
+            <input type="color">
+    
+            <br>
+            <br>
+    
+            <input type="submit">
+            <input type="reset">
+    
+        </form>
+        <br>
+        <br>
+
+
+
+        <!-- Size Attribute : It is used to change the size-->
+
+        <form method="post" action="">
+            <label>Name</label>
+            <input type="text" name="firstname" size="100" placeholder="abcdefg" value="manu">
+    
+            <br>
+            <br>
+    
+            <label>email</label>
+            <input type="email" placeholder="abc@gmail.com">
+    
+            <br>
+            <br>
+    
+            <label>Phone</label>
+            <input type="number" placeholder="0000000000">
+    
+            <br>
+            <br>
+    
+            <label>Password</label>
+            <input type="password" placeholder="poli19">
+    
+            <br>
+            <br>
+    
+            <label>Gender</label>
+            <input type="radio">Female
+            <input type="radio">Male
+            <input type="radio">Other
+    
+            <br>
+            <br>
+    
+            <label>Language</label>
+            <input type="checkbox">Malayalam
+            <input type="checkbox">English
+            <input type="checkbox">Tamil
+            <input type="checkbox">Marathi
+    
+            <br>
+            <br>
+    
+            <label>State</label>
+            <select>
+                <option>Select States</option>
+                <option>Kerala</option>
+                <option>Tamil Nadu</option>
+                <option>Karnataka</option>
+                <option>Andhra Pradesh</option>
+                <option>Gujarath</option>
+                <option>Maharashtra</option>
+               
+            </select>
+    
+            <br>
+            <br>
+    
+            <label>Address</label>
+            <textarea name="address" rows="50" cols="50"></textarea>
+    
+            <br>
+            <br>
+    
+            <label>File upload</label>
+            <input type="file">
+    
+            <br>
+            <br>
+    
+            <label>DOB</label>
+            <input type="date">
+    
+            <br>
+            <br>
+    
+            <label>Time</label>
+            <input type="time">
+    
+            <br>
+            <br>
+    
+            <label>Colour</label>
+            <input type="color">
+    
+            <br>
+            <br>
+    
+            <input type="submit">
+            <input type="reset">
+    
+        </form>
+         
+
+
+        
+         
+         
+                               
+
+
+
+
+</body>
+</html>    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

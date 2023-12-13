@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        table,th,td{
+            /* full table border */
+            border: 1px solid blue;
+            /* border only for bottom then */
+            border-bottom: 1px solid rgb(46, 218, 46);
+            /* for removing double border */
+            border-collapse: collapse;
+
+        }
+         table{
+            width: 100%;
+        } 
+        /* for centering the datas inside the table*/
+         td{ 
+            text-align: center;
+            /* also gave some gap (height=20px) */
+            height: 20px;
+        }
+        /* for getting the gap for the main heading */
+        th{
+            height: 50px;
+            /* for background color */
+            background-color: aqua;
+        }
+
+        
+/* <!-- Css hower : The hower selecter which is used to select elements when you mouse over them */
+                 /* It is used to make animation changes on an image, text etc... --> */
+        
+
+        /* tr:hover{
+            background-color: blueviolet;
+        }   */
+          /* td:hover{
+            background-color: brown;
+        }     */
+          tr:hover{
+            background-color: black;
+            /* /* to change the color of the text  */
+             color: chartreuse; 
+            /* to increase the font size of the text */
+            font-size: 30px; 
+          }    
+        img{
+             height: 100px;
+            width: 100px; 
+        } 
+        /* img:hover{
+            height: 400px;
+            width: 400px;
+            border: 2px solid red;
+            
+        }       */
+
+
+        /* for zoom in and out of the image */
+        /* img:hover{
+            transform: scale(1.5);
+            border: 2px solid green;
+
+        } */
+
+
+
+
+/* Striped Tables : for changing the color in the particular number of coloms(even ,odd etc.....) */
+
+        tr:nth-child(even){
+            background-color: crimson;
+
+        }
+        /* tr:nth-child(odd){
+            background-color: rgb(85, 52, 204);
+
+        } */
+        
+
+
+
+
+
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- slno name age --> 
+    <table>
+        <tr>
+            <th>Sl no:</th>
+            <th>Name</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Alex</td>
+            <td>78</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Bex</td>
+            <td>38</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Cerix</td>
+            <td>29</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Dora</td>
+            <td>23</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Era</td>
+            <td>21</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>Flem</td>
+            <td>20</td>
+        </tr>
+
+    </table>
+
+<center>
+    <img src="MJmoonwalk_trans_NvBQzQNjv4BqqVzuuqpFlyLIwiB6NTmJwfSVWeZ_vEN7c6bHu2jJnT8.jpg">
+</center> 
+</body>
+</html>
+

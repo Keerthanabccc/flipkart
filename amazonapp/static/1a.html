@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'poppins', sans-serif;
+            box-sizing: border-box;
+        }
+        body{
+            background: black;
+            color: #fff;
+        }
+        #header{
+            width: 100%;
+            height: 100vh;
+            background-image: url(exacty.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        #c{
+            height: 40px;
+            width: 500px;
+            border-radius: 10px;
+            border-color: #ff004f;
+        }
+        .container{
+            padding: 10px 10%;
+        }
+        nav{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .logo{
+            width: 140px;
+
+        }
+        nav u1 li{
+            display: inline-block;
+            list-style: none;
+            margin: 10px 20px;
+        }
+        nav u1 li a{
+            color: #fff9f9;
+            text-decoration: none;
+            font-size: 18px;
+            position: relative;
+        }
+        nav u1 li a::after{
+            content: '';
+            width: 0;
+            height: 3px;
+            background: #ff004f;
+            position: absolute;
+            left: 0;
+            bottom: -6px;
+            transition: 0.5s;
+        }
+        nav u1 li a:hover::after{
+            width: 100%;
+        }
+        .header-text{
+            margin-top: 20%;
+            font-size: 30px;
+
+        }
+        .header-text h1{
+            font-size: 60px;
+            margin-top: 20px;
+        }
+        .header-text h1 span{
+            color: red;
+        }
+        /* about--------------------- */
+
+        #about{
+            padding: 80px 0;
+            color: #ababab;
+        }
+        .row{
+           display: flex;
+            /* justify-content: space-between; */
+            flex-wrap: wrap;
+           
+        }
+        .about-col-1{
+            flex-basis: 35%;
+        }
+        .about-col-1 img{
+            width: 100%;
+            border-radius: 15px;
+        }
+        .about-col-2{
+            flex-basis: 60%;
+            margin-left: 50px;
+        }
+        .sub-title{
+            font-size: 60px;
+            font-weight: 600;
+            color: white;
+           
+        }
+        .tab-titles{
+            display: flex;
+            margin: 20px 0 40px;
+        }
+        .tab-links{
+            margin-right: 50px;
+            font-size: 18px;
+            font-weight: 500;
+            cursor: pointer;
+            position: relative;
+        }
+        .tab-links::after{
+            content: '';
+            width: 0;
+            height: 3px;
+            background:#ff004f;
+            position: absolute;
+            left: 0;
+            bottom: -8px;
+            transition: 0.5s;
+        }
+        .tab-links.active-link::after{
+            width: 50%;
+        }
+        .tab-contents ul li{
+            list-style: none;
+            margin: 10px 0;
+        }
+        .tab-contents ul li span{
+            color: brown;
+            font-size: 14px;
+
+        } 
+        .tab-contents{
+            display: none;
+        }
+        .tab-contents.active-tab{
+            display: block;
+        }
+        #lop{
+            background-color: black;
+            height: 1000px;
+            width: 1500px;
+         }
+        #e{
+            
+            background-color: aqua;
+            box-shadow: black 10px 10px 10px;
+            
+        }
+
+         #y{
+          background-color: aqua;
+        }
+       
+        
+        #r{
+          background-color: aqua;
+          margin-bottom: 1000px;
+        }
+        #yu{
+          padding-left: 30px;
+        }
+        #ty{
+          height: 100px;
+          width: 160px;
+        } 
+        #poll{
+          background-color: black;
+          border-radius: 25px;
+        }
+        
+
+      
+    </style>
+        
+<script src="https://kit.fontawesome.com/c0892b2912.js" crossorigin="anonymous"></script>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+  crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="k icon.jpg" class="logo">
+                <u1>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </u1>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, I'm <span>Keerthana BC </span><br> From Palakkad</h1>
+                <br>
+                <input type="text" class="icon-rtl" value placeholder="Search for me" id="c">
+            </div>
+        </div>
+    </div>
+<!-- ------------about----------- -->
+    <div id="about">
+        <div class="container" id="poll">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="yes.jpg" >
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1><br>
+                    <p> Hello everyone! My name is Keerthana BC<br>I'm a fresh graduate excited to embark in the IT field .<br>I've completed my initial studies from Yuvakshetra Institute of Management Studies .<br>After that I pursued <font color="red"> Python Django Angular Full Stack Web Development Programme </font> <br>
+                    from Luminar Technolab . I graduated majoring in <font color="red"> Mathematics </font><br>Growing up,I have always been attracted to Computers and Technology.<br>As soon as I could,I taught myself the skills needed to make<br>a successful career in the <font color="red">IT field</font>.<br>During my studies I have gained knowledge in <font color="red">Coding ,Web designing ,Front-end and Back-end creation ,Python Developer ,Full Stack Developer ,Python Django Developer</font><br>I believe I possess the required skills and expertise to work effectively in the software industry .<br>I'm sure that
+                my passion ,dedication, and hardwork in the software industry will lead to achieve my goals and I am confident that I will be great asset to the company </p>
+                
+                </div>
+            </div>
+        </div>
+    </div>
+     <div class="row" id="lop">
+       
+       <h1 ><font size="8" color="white">My Achievements</font></h1>
+       
+       <div class="row" id="y">
+        <b><font size="6" color="black">Products For You</font> </b>
+    </div>
+    <hr>
+    
+    <div class="row">
+        <div class="col-2" >
+
+            <div class="card" style="width: 15rem;">
+              
+                <div class="card-body">
+                  <h5 class="card-title"><b><h1 align="center"></h1> </b></h5>
+                  
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" class="btn " id="e"><b>View all</b></a>
+                <br><br><br><br>
+                  <img src="m1.jpg" height="200px" width="100px" class="card-img-top" alt="...">
+                </div>
+              </div>
+          
+
+        </div>
+
+        <div class="col-10">
+        <p id="w"><b><font size="5" color="black" ><h1 style="color: black; background-color: aqua;">&nbsp;&nbsp;&nbsp;My Achievements</h1> </font></b></p>
+        <br>
+
+        <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+
+              <div class="row">
+                  <div class="col-2" id="yu">
+                      <div class="card" style="width: 10rem; height: 16rem;">
+                       
+                          <img src="h.jpg" class="card-img-top" alt="..." id="ty">
+                          <div class="card-body">
+                            <h5 class="card-title">SIDDHI conducted webinar</h5>
+                            
+                            <a href="#" class="btn btn-primary" id="yo">Add to Cart</a>
+                          </div>
+                        </div>
+
+
+
+                  </div>
+
+                  <div class="col-2" id="yu">
+                    <div class="card" style="width: 10rem; height: 16rem;">
+                     
+                        <img src="WIN_20230819_08_23_51_Pro.jpg" class="card-img-top" alt="..." id="ty">
+                        <div class="card-body">
+                          <h5 class="card-title">Online web designing Competition <br> </h5>
+                          
+                          <a href="#" class="btn btn-primary">Add to Cart</a>
+                        </div>
+                      </div>
+                   </div>
+
+
+
+
+              <div class="col-2" id="yu">
+                <div class="card" style="width: 10rem; height: 16rem;">
+                 
+                    <img src="WIN_20230819_08_24_25_Pro.jpg" class="card-img-top" alt="..." id="ty">
+                    <div class="card-body">
+                      <h5 class="card-title">Embroidery Competition</h5>
+                      <br>
+                      
+                      <a href="#" class="btn btn-primary">Add to Cart</a>
+                    </div>
+                  </div>
+          </div>
+
+
+
+          <div class="col-2" id="yu">
+            <div class="card" style="width: 10rem; height: 16rem;">
+             
+                <img src="WIN_20230819_08_24_48_Pro.jpg" class="card-img-top" alt="..." id="ty">
+                <div class="card-body">
+                  <h5 class="card-title">Children's Parliment Seminar</h5>
+                  
+                  <a href="#" class="btn btn-primary">Add to Cart</a>
+                </div>
+              </div>
+      </div>
+
+
+      <div class="col-2" id="yu">
+        <div class="card" style="width: 10rem; height: 16rem;">
+         
+            <img src="WIN_20230819_08_25_00_Pro.jpg" class="card-img-top" alt="..." id="ty">
+            <div class="card-body">
+              <h5 class="card-title">PCM Competition</h5>
+              <br>
+              <a href="#" class="btn btn-primary">Add to Cart</a>
+            </div>
+          </div>
+  </div>
+
+
+  <div class="col-2" id="yu">
+    <div class="card" style="width: 10rem; height: 16rem;">
+     
+        <img src="WIN_20230819_08_25_19_Pro.jpg" class="card-img-top" alt="..." id="ty">
+        <div class="card-body">
+          <h5 class="card-title">Online Poster making Competition</h5>
+          
+          <a href="#" class="btn btn-primary">Add to Cart</a>
+        </div>
+      </div>
+</div>
+
+
+              
+
+              </div>
+              
+            </div>
+
+            <div class="carousel-item">
+
+
+              <div class="row">
+                <div class="col-2" id="yu">
+                    <div class="card" style="width: 10rem; height: 16rem;">
+                     
+                        <img src="h.jpg" class="card-img-top" alt="..." id="ty">
+                        <div class="card-body">
+                          <h5 class="card-title">SIDDHI conducted webinar</h5>
+                          
+                          <a href="#" class="btn btn-primary">Add to Cart</a>
+                        </div>
+                      </div>
+
+
+
+                </div>
+
+                <div class="col-2" id="yu">
+                  <div class="card" style="width: 10rem; height: 17.5rem;">
+                   
+                      <img src="" class="card-img-top" alt="..." id="ty">
+                      <div class="card-body">
+                        <h5 class="card-title">Swiss Beauty  9 Color Eyeshadow Palette </h5>
+                        
+                        <a href="#" class="btn btn-primary">Add to Cart</a>
+                      </div>
+                    </div>
+                 </div>
+
+
+
+
+            <div class="col-2" id="yu">
+              <div class="card" style="width: 10rem; height: 17.5rem;">
+               
+                  <img src="ren.webp" class="card-img-top" alt="..." id="ty">
+                  <div class="card-body">
+                    <h5 class="card-title">RENEE Premium Fragrances Set Of 4, 15ml</h5>
+                    
+                    <a href="#" class="btn btn-primary">Add to Cart</a>
+                  </div>
+                </div>
+        </div>
+
+
+
+        <div class="col-2" id="yu">
+          <div class="card" style="width: 10rem; height: 17.5rem;">
+           
+              <img src="su.jpg" class="card-img-top" alt="..." id="ty">
+              <div class="card-body">
+                <h5 class="card-title">Mettle Matte Lipstick - 05 Hedone (Orange)</h5>
+                
+                <a href="#" class="btn btn-primary">Add to Cart</a>
+              </div>
+            </div>
+    </div>
+
+
+    <div class="col-2" id="yu">
+      <div class="card" style="width: 10rem; height: 17.5rem;">
+       
+          <img src="daz.jpg" class="card-img-top" alt="..." id="ty">
+          <div class="card-body">
+            <h5 class="card-title">Eyetex Dazller Eyeliner, Matte Finish</h5>
+            
+            <a href="#" class="btn btn-primary">Add to Cart</a>
+          </div>
+        </div>
+</div>
+
+
+<div class="col-2" id="yu">
+  <div class="card" style="width: 10rem; height: 17.5rem;">
+   
+      <img src="lo.jpg" class="card-img-top" alt="..." id="ty">
+      <div class="card-body">
+        <h5 class="card-title">Loreal eye amazing shades , waterproof</h5>
+        
+        <a href="#" class="btn btn-primary">Add to Cart</a>
+      </div>
+    </div>
+</div>
+
+
+            
+
+            </div>
+            
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+
+           
+            
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-2" id="yu">
+                    <div class="card" style="width: 10rem; height: 17.5rem;">
+                     
+                        <img src="may.jpg" class="card-img-top" alt="..." id="ty">
+                        <div class="card-body">
+                          <h5 class="card-title">Maybelline SuperStay Vinyl Ink review</h5>
+                          
+                          <a href="#" class="btn btn-primary">Add to Cart</a>
+                        </div>
+                      </div>
+
+
+
+                </div>
+
+                <div class="col-2" id="yu">
+                  <div class="card" style="width: 10rem; height: 17.5rem;">
+                   
+                      <img src="sw.jpg" class="card-img-top" alt="..." id="ty">
+                      <div class="card-body">
+                        <h5 class="card-title">Swiss Beauty  9 Color Eyeshadow Palette </h5>
+                        
+                        <a href="#" class="btn btn-primary">Add to Cart</a>
+                      </div>
+                    </div>
+                 </div>
+
+
+
+
+            <div class="col-2" id="yu">
+              <div class="card" style="width: 10rem; height: 17.5rem;">
+               
+                  <img src="ren.webp" class="card-img-top" alt="..." id="ty">
+                  <div class="card-body">
+                    <h5 class="card-title">RENEE Premium Fragrances Set Of 4, 15ml</h5>
+                    
+                    <a href="#" class="btn btn-primary">Add to Cart</a>
+                  </div>
+                </div>
+        </div>
+
+
+
+        <div class="col-2" id="yu">
+          <div class="card" style="width: 10rem; height: 17.5rem;">
+           
+              <img src="su.jpg" class="card-img-top" alt="..." id="ty">
+              <div class="card-body">
+                <h5 class="card-title">Mettle Matte Lipstick - 05 Hedone (Orange)</h5>
+                
+                <a href="#" class="btn btn-primary">Add to Cart</a>
+              </div>
+            </div>
+    </div>
+
+
+    <div class="col-2" id="yu">
+      <div class="card" style="width: 10rem; height: 17.5rem;">
+       
+          <img src="daz.jpg" class="card-img-top" alt="..." id="ty">
+          <div class="card-body">
+            <h5 class="card-title">Eyetex Dazller Eyeliner, Matte Finish</h5>
+            
+            <a href="#" class="btn btn-primary">Add to Cart</a>
+          </div>
+        </div>
+</div>
+
+
+<div class="col-2" id="yu">
+  <div class="card" style="width: 10rem; height: 17.5rem;">
+   
+      <img src="lo.jpg" class="card-img-top" alt="..." id="ty">
+      <div class="card-body">
+        <h5 class="card-title">Loreal eye amazing shades , waterproof</h5>
+        
+        <a href="#" class="btn ">Add to Cart</a>
+      </div>
+    </div>
+</div>
+
+
+            
+
+            </div>
+            
+          </div>
+            
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+
+
+
+
+
+        </div>
+
+
+
+        
+        
+
+
+
+
+
+
+
+
+
+    </div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       
+    </div> 
+
+
+
+
+</body>
+</html>
